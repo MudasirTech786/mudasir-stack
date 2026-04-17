@@ -11,7 +11,7 @@ export default function Home() {
     {
       title: "ERP System",
       desc: "A comprehensive ERP solution developed using Core PHP, JavaScript, and AJAX, engineered for end-to-end business automation including users, sales, inventory, invoices, and petty cash modules with scalable architecture.",
-      img: "/erp.png",
+      img: "/erps.png",
       link: "https://your-dayim-link.com",
       restricted: true,
     },
@@ -49,50 +49,62 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
+      {/* HERO */}
       <section className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-16 px-6 py-24 text-center md:text-left">
 
         {/* TEXT */}
         <div className="flex flex-col items-center md:items-start">
-          <p className="text-gray-400">Hello, I'm</p>
 
-          <h1 className="text-5xl md:text-7xl font-bold mt-3">
-            Mudasir
+          <p className="text-gray-400 text-sm md:text-base">
+            Hello, I'm
+          </p>
+
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mt-3 leading-tight">
+            Muhmmad Mudasir
           </h1>
 
-          <h2 className="text-2xl md:text-4xl text-orange-500 mt-4">
-            Web Developer
+          <h2 className="text-xl sm:text-2xl md:text-4xl text-orange-500 mt-4">
+            Software Engineer
           </h2>
 
-          <p className="text-gray-400 mt-6 max-w-xl">
-            3+ years of experience in full-stack development specializing in PHP, Laravel, JavaScript, AJAX, and scalable systems.
+          <p className="text-gray-400 mt-6 max-w-xl text-sm sm:text-base">
+            3+ years of experience in full-stack development specializing in PHP, Laravel, Nextjs, JavaScript, AJAX, and scalable systems.
           </p>
 
           <div className="flex flex-wrap gap-4 mt-10 justify-center md:justify-start">
-            <button className="bg-orange-500 px-8 py-3 rounded-lg font-semibold hover:bg-orange-600">
+            <button className="bg-orange-500 px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 text-sm md:text-base">
               Hire Me
             </button>
 
             <a
               href="/mudasir-resume.pdf"
               download
-              className="border border-gray-500 px-8 py-3 rounded-lg hover:border-white"
+              className="border border-gray-500 px-6 py-3 rounded-lg hover:border-white text-sm md:text-base"
             >
               Download CV
             </a>
           </div>
+
         </div>
 
-        {/* IMAGE */}
-        <div className="flex justify-center">
-          <div className="relative w-[320px] h-[420px] md:w-[420px] md:h-[520px]">
+        {/* IMAGE (MOBILE FIXED) */}
+        <div className="flex justify-center md:justify-center mt-10 md:mt-0">
+          <div className="
+      relative
+      w-[200px] h-[260px]
+      sm:w-[240px] sm:h-[320px]
+      md:w-[520px] md:h-[520px]
+    ">
             <Image
               src="/maddys.jpg"
               alt="profile"
               fill
-              className="object-cover rounded-2xl shadow-2xl"
+              priority
+              className="object-cover rounded-2xl shadow-2xl object-top"
             />
           </div>
         </div>
+
       </section>
 
       {/* SKILLS */}
